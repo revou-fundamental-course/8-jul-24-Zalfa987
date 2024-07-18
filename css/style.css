@@ -1,0 +1,168 @@
+/* Gaya umum untuk halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Kontainer utama */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #DCDCDC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya judul */
+.title {
+    text-align: center;
+    color: #000000;
+}
+
+/* Label untuk setiap input */
+.label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #050000;
+}
+
+/* Input field untuk form */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Grup form */
+.form-group {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f0f8ff;
+}
+
+/* Gaya tombol */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #00ff08;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+/* Gaya tombol saat hover */
+.btn:hover {
+    background-color: #00cc06;
+}
+
+/* Kontainer kalkulator */
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Bagian form */
+.form-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Bagian hasil */
+.result-section {
+    flex: 2;
+    min-width: 300px;
+}
+
+/* Kontainer hasil */
+.result-container {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff3cd;
+    border: 1px solid #ccc;
+}
+
+/* Informasi hasil BMI */
+.result-info {
+    margin-bottom: 10px;
+}
+
+/* Hasil BMI */
+.bmi-result {
+    font-size: 2em; /* Perbesar angka BMI */
+    font-weight: bold; /* Tebalkan angka BMI */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Saran berdasarkan BMI */
+.advice {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff3cd;
+}
+
+/* Informasi penyakit terkait BMI */
+.disease-info {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fff3cd;
+    border: 1px solid #ccc;
+}
+
+/* Gaya judul untuk informasi penyakit */
+.disease-info h3 {
+    margin-top: 0;
+}
+
+/* List informasi penyakit */
+.disease-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Item list informasi penyakit */
+.disease-info li {
+    margin-bottom: 10px;
+}
+
+/* Informasi tambahan */
+.extra-info {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f0f8ff; /* Ubah background menjadi #f0f8ff */
+    border: 1px solid #ccc;
+}
+
+/* Gaya responsif */
+@media (min-width: 768px) {
+    /* Style agar responsif */
+    .calculator-container {
+        flex-direction: row;
+    }
+    .result-section {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Style agar responsif di layar kecil */
+    .result-section {
+        margin-left: 0;
+    }
+}

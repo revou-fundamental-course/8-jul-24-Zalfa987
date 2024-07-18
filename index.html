@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Menghubungkan file JavaScript -->
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <!-- Kontainer utama -->
+    <div class="container">
+        <!-- Judul halaman -->
+        <h1 class="title">Kalkulator BMI</h1>
+        <!-- Deskripsi fitur -->
+        <p class="feature">Keunggulan fitur: Menghitung indeks massa tubuh untuk mengetahui status berat badan Anda.</p>
+        
+        <!-- Kontainer kalkulator -->
+        <div class="calculator-container">
+            <!-- Bagian form untuk input data pengguna -->
+            <div class="form-section">
+                <!-- Grup form untuk memilih jenis kelamin -->
+                <div class="form-group">
+                    <label for="gender" class="label">Jenis Kelamin:</label>
+                    <select id="gender" class="input-field">
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                </div>
+
+                <!-- Grup form untuk memasukkan berat badan -->
+                <div class="form-group">
+                    <label for="weight" class="label">Berat Badan (kg):</label>
+                    <input type="number" id="weight" class="input-field" placeholder="Masukkan berat badan">
+                </div>
+
+                <!-- Grup form untuk memasukkan usia -->
+                <div class="form-group">
+                    <label for="age" class="label">Usia (tahun):</label>
+                    <input type="number" id="age" class="input-field" placeholder="Masukkan usia">
+                </div>
+
+                <!-- Grup form untuk memasukkan tinggi badan -->
+                <div class="form-group">
+                    <label for="height" class="label">Tinggi Badan (cm):</label>
+                    <input type="number" id="height" class="input-field" placeholder="Masukkan tinggi badan">
+                </div>
+
+                <!-- Tombol untuk menghitung dan mereset form -->
+                <button class="btn" id="calculateBtn">Hitung Hasil</button>
+                <button class="btn" id="resetBtn">Reset</button>
+            </div>
+
+            <!-- Bagian hasil perhitungan BMI -->
+            <div class="result-section">
+                <!-- Kontainer untuk menampilkan hasil BMI -->
+                <div class="result-container">
+                    <!-- Informasi hasil BMI -->
+                    <div class="result-info">
+                        <p>Berikut hasil data Anda:</p>
+                        <p>Usia: <span id="ageResult">0</span></p>
+                        <p>Jenis Kelamin: <span id="genderResult">-</span></p>
+                        <p>BMI Anda adalah:</p>
+                        <p class="bmi-result" id="result">0.0</p>
+                        <p>Anda masuk ke kategori: <span id="status">-</span></p>
+                    </div>
+                    <!-- Saran berdasarkan hasil BMI -->
+                    <div class="advice" id="advice"></div>
+                    <!-- Informasi penyakit terkait BMI -->
+                    <div class="disease-info" id="diseaseInfo"></div>
+                </div>
+                <!-- Tombol untuk mengunduh hasil BMI -->
+                <button class="btn" id="downloadBtn">Download Hasil BMI</button>
+            </div>
+        </div>
+
+        <!-- Informasi tambahan tentang BMI -->
+        <div class="extra-info">
+            <p><strong>BMI atau Body Mass Index</strong> adalah ukuran yang digunakan untuk menentukan apakah berat badan Anda sehat. Ini dihitung dengan membagi berat badan (kg) dengan tinggi badan (m) kuadrat.</p>
+            <p>Mengetahui BMI Anda bisa membantu Anda memahami apakah Anda memiliki berat badan yang sehat dan dapat membantu dalam menentukan langkah-langkah untuk meningkatkan kesehatan.</p>
+            <p>Penting untuk diingat bahwa BMI adalah alat screening, bukan diagnosis, dan hasilnya harus dipertimbangkan bersama faktor lainnya seperti lingkar pinggang, tekanan darah, dan faktor risiko penyakit lainnya.</p>
+        </div>
+    </div>
+</body>
+</html>
